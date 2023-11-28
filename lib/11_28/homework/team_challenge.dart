@@ -18,13 +18,20 @@ void main(){
     }else if(i % 3 == 0){
       print('$currentPlayer: clap');
       clapCount++;
+      clapCountsByPlayer[currentPlayerIndex]++;
     }else if(i % 10 == 0){
       print('$currentPlayer: rool');
       roolCount++;
     }else{
       print('$currentPlayer: $i');
     }
+    currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
    }
+
+  print('박수 친 개수 : $clapCount');
+  print('소리 지른 개수 : $ahhCount');
+  print('rool 한 개수 : $roolCount');
+
   int maxClapCount = 0;
   String playerWithMaxClap = '';
 
@@ -41,9 +48,6 @@ void main(){
   print('\n가장 많은 clap을 출력한 플레이어: $playerWithMaxClap');
   print('해당 플레이어가 출력한 clap 횟수: $maxClapCount');
   //
-  // print('박수 친 개수 : $clapCount');
-  // print('소리 지른 개수 : $ahhCount');
-  // print('rool 한 개수 : $roolCount');
 
 
   }
