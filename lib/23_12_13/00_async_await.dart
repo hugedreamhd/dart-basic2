@@ -20,6 +20,7 @@ Future<void> employeeMembers(String member, String member_copy) async {
 }
 
 void main() {
-  final sam = File('lib/23_12_13/sample.txt');
+  final sam = File('lib/23_12_13/'
+      'sample.txt');
   employeeMembers('sample.txt', 'sample_copy.txt');
 }
