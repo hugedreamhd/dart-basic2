@@ -1,10 +1,10 @@
 void main() {
-  try {
-    final numString = '10.5';
+  final numString = '10.5';
 
+  try {
     int num = int.parse(numString);
   } catch (e) {
-    print('정수가 아닙니다 : $e');
+    print('정수가 아닙니다');
   } finally {
     print('0');
   }

@@ -8,15 +8,14 @@ void main() {
     final originalFile = File(source);
     final copyFile = File(target);
 
-    // 파일 읽기
-    // print(file.readAsStringSync());
-
-    // 파일 쓰기
-    // String copyFile = '조던 링';
-    // file.writeAsStringSync(copyFile);
-
-    //파일 복사
-    copyFile.writeAsStringSync(originalFile.readAsStringSync());
+    File(target).writeAsStringSync(File(source).readAsStringSync());
   }
+  // 파일 읽기
+  // print(file.readAsStringSync());
 
+  // 파일 쓰기
+  // String copyFile = '조던 링';
+  // file.writeAsStringSync(copyFile);
+
+  //파일 복사
 }
