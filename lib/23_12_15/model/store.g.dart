@@ -6,6 +6,8 @@ part of 'store.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+import 'store.dart';
+
 Strong _$StrongFromJson(Map<String, dynamic> json) => Strong(
       json['name'] as String,
     );

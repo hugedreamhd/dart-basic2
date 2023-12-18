@@ -50,5 +50,6 @@ void main() {
   //직렬화 파일에 쓰기
   final file = File('lib/23_12_11/company.txt');
   String jsonWrite = jsonEncode(departmentLeader);
+
   file.writeAsStringSync(jsonWrite);
 }
